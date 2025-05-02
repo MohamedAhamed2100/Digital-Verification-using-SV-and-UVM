@@ -141,7 +141,7 @@ This project is licensed under the MIT License.
 
 **Authors:**
 
-* Your Name (`you@example.com`)
+* Your Name (`Mohamed Ahmed`)
 * Collaboration Team
 
 Happy verifying! 🔍
