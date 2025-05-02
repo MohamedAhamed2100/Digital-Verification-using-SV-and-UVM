@@ -26,7 +26,7 @@ Verification was performed in a Linux environment using QuestaSim. Each environm
    export FIFO_ROOT=$HOME/path/to/syn_fifo
    ```
 
-Ensure that `$FIFO_ROOT` is set in environment pathes before invoking any of the make targets.
+Ensure that `$FIFO_ROOT` is set in environment variables before invoking any of the make targets.
 
 ## 3. Directory Structure
 
@@ -121,8 +121,13 @@ make all
 
 **Makefile targets:**
 
-* `all`       : Run UVM tests for SEED1..SEED5
-* `run SEED=n`: Run UVM test with a specific random seed
+* "  questa        - Run basic simulation"
+* "  questa+SIM    - Run simulation with +SIM defined"
+* "  seed<number>  - Run simulation with specific seed (e.g., seed1, seed2)"
+* "  all_seeds     - Run simulations with all predefined seeds"
+* "  merge_coverage- Merge coverage data from all seed runs"
+* "  run_seeds     - Run all seeds and merge coverage"
+* "  clean         - Clean up simulation files"	
 
 Results, coverage reports, and logs will be generated under `uvm_verification/results/`.
 
@@ -144,7 +149,7 @@ git checkout tags/FIFO_1.0.0
 ## 8. Contributing & Extensions
 
 * To add new test cases (SV or UVM), place your `.sv` files in the respective directories and update `src_files.list`.
-* To increase the number of seeds, edit the `SEED` variable in `tools/*/Makefile`.
+* To increase the number of seeds, edit the `SEEDS` variable in `tools/*/Makefile`.
 
 ## 9. License & Authors
 
@@ -153,6 +158,5 @@ This project is licensed under the MIT License.
 **Authors:**
 
 * Your Name (`Mohamed Ahmed`)
-* Collaboration Team
 
 Happy verifying! 🔍
