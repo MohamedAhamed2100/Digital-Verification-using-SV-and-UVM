@@ -41,10 +41,15 @@ class FIFO_coverage;
 			ignore_bins read_nactv_empty         = binsof(r_en_cp) intersect {1'b0} && binsof(empty_cp) intersect {1'b1};
 		}
 		
-		almostfull_cross:  cross r_en_cp ,w_en_cp ,almostfull_cp;
+		almostfull_cross:  cross r_en_cp ,w_en_cp ,almostfull_cp{ 
+		        // who almostfull with read 
+			ignore_bins w_en_nactv_almostfull    = binsof(r_en_cp) intersect {1'b0} && binsof(almostfull_cp) intersect {1'b1}; 
+		}
 		
-		almostempty_cross: cross r_en_cp ,w_en_cp ,almostempty_cp;
-		
+		almostempty_cross: cross r_en_cp ,w_en_cp ,almostempty_cp{ 
+			// who almostempty with write
+			ignore_bins w_en_nactv_almostempty   = binsof(w_en_cp) intersect {1'b0} && binsof(almostempty_cp) intersect {1'b1}; 
+		}
 		
 		overflow_cross:    cross r_en_cp ,w_en_cp ,overflow_cp{ 
 			ignore_bins w_en_nactv_wr_ack        = binsof(w_en_cp) intersect {1'b0} && binsof(overflow_cp) intersect {1'b1}; 
