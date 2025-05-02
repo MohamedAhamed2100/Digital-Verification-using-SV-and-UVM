@@ -26,8 +26,6 @@ Verification was performed in a Linux environment using QuestaSim. Each environm
    export FIFO_ROOT=$HOME/path/to/fifo-verification
    ```
 
-n\`\`\`
-
 Ensure that `$FIFO_ROOT` is set in environment pathes before invoking any of the make targets.
 
 ## 3. Directory Structure
