@@ -136,11 +136,7 @@ Two tagged versions are available:
 | `FIFO_0.1.0` | Initial buggy version        |
 | `FIFO_1.0.0` | Corrected & verified version |
 
-Checkout a specific version before running tests:
-
-```bash
-git checkout tags/FIFO_1.0.0
-```
+Checkout a specific version before running tests
 
 ## 8. Contributing & Extensions
 
