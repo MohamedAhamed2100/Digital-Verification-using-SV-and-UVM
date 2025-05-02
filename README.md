@@ -96,12 +96,6 @@ Adjust paths in `src_files.list` as needed by your simulation scripts or Makefil
 
 The SV-based environment comprises directed test cases in `sv_verification/`. To run all tests with 5 different random seeds:
 
-```bash
-cd ${FIFO_ROOT}/tools/sv
-# By default, the Makefile uses SEED1…SEED5
-make all
-```
-
 **Makefile targets:**
 
 * "  questa        - Run basic simulation"
@@ -117,12 +111,6 @@ Results, coverage reports, Logs and waveform dumps will be output into `sv_verif
 ## 6. Running UVM-Based Verification
 
 The UVM environment provides a reusable testbench with sequences in `uvm_verification/`. To execute the UVM tests:
-
-```bash
-cd ${FIFO_ROOT}/tools/uvm
-# By default, runs 5 seeds
-make all
-```
 
 **Makefile targets:**
 
