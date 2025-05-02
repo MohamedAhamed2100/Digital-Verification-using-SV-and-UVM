@@ -18,7 +18,7 @@ Verification was performed in a Linux environment using QuestaSim. Each environm
    * GNU Make
 2. **Operating System:**
 
-   * Linux (Ubuntu 22.04+ recommended)
+   * Linux (Ubuntu 20.04+ recommended)
 3. **Environment Variables:**
 
    ```bash
@@ -37,8 +37,10 @@ ${FIFO_ROOT}/
 │   ├── FIFO_1.0.0v.sv
 ├── sv_verification/       # SV-based directed testbench and scripts
 │   ├── tb_fifo.sv
-│   ├── src_files.list     # Generated file list for SV tests
-│   ├── src_files_2.list
+│   ├── src_files.list     # Generated file list for SV tests for FIFO_0.1v
+│   ├── src_files_2.list   # Generated file list for SV tests for FIFO_1.0.0v
+│   ├── FIFO_0.1v.sv
+│   ├── FIFO_1.0.0v.sv
 │   ├── FIFO_IF.sv
 │   ├── FIFO_transaction_pkg.sv
 │   ├── FIFO_coverage_pkg.sv
@@ -75,25 +77,20 @@ ${FIFO_ROOT}/
 
 Before running either environment, generate or update the file lists to include the RTL, testbench, and UVM class files.
 
-1. **Design file list:**
+1. **SV Verification file list:**
 
    ```bash
-   find ${FIFO_ROOT}/design -name "*.sv" > ${FIFO_ROOT}/design/filelist.f
+   find ${FIFO_ROOT}/design -name "*.sv" > ${FIFO_ROOT}/sv_verification/src_files.list
+   find ${FIFO_ROOT}/design -name "*.sv" > ${FIFO_ROOT}/sv_verification/src_files_2.list
    ```
 
-2. **SV Verification file list:**
+2. **UVM Verification file list:**
 
    ```bash
-   find ${FIFO_ROOT}/sv_verification -name "*.sv" >> ${FIFO_ROOT}/design/filelist.f
+   find ${FIFO_ROOT}/uvm_verification -name "*.sv" >> ${FIFO_ROOT}/uvn_verification/src_files.list
    ```
 
-3. **UVM Verification file list:**
-
-   ```bash
-   find ${FIFO_ROOT}/uvm_verification -name "*.sv" >> ${FIFO_ROOT}/design/filelist.f
-   ```
-
-Adjust paths in `filelist.f` as needed by your simulation scripts or Makefiles.
+Adjust paths in `src_files.list` as needed by your simulation scripts or Makefiles.
 
 ## 5. Running SV-Based Verification
 
