@@ -1,0 +1,15 @@
+$FIFO_ROOT/uvm_verification/Shared_pkg.sv
+$FIFO_ROOT/uvm_verification/FIFO_v1.0.0.sv
+$FIFO_ROOT/uvm_verification/FIFO_IF.sv
+$FIFO_ROOT/uvm_verification/top_module.sv
+$FIFO_ROOT/uvm_verification/FIFO_config_obj_pkg.sv
+$FIFO_ROOT/uvm_verification/FIFO_test_pkg.sv
+$FIFO_ROOT/uvm_verification/FIFO_sequence_pkg.sv
+$FIFO_ROOT/uvm_verification/FIFO_env_pkg.sv
+$FIFO_ROOT/uvm_verification/FIFO_coverage_pkg.sv
+$FIFO_ROOT/uvm_verification/FIFO_sequence_item_pkg.sv
+$FIFO_ROOT/uvm_verification/FIFO_sequencer_pkg.sv
+$FIFO_ROOT/uvm_verification/FIFO_agent_pkg.sv
+$FIFO_ROOT/uvm_verification/FIFO_driver_pkg.sv
+$FIFO_ROOT/uvm_verification/FIFO_monitor_pkg.sv
+$FIFO_ROOT/uvm_verification/FIFO_scoreboard_pkg.sv

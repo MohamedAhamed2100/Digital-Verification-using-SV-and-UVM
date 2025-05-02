@@ -1,0 +1,9 @@
+$FIFO_ROOT/sv_verification/Shared_pkg.sv
+$FIFO_ROOT/sv_verification/FIFO_v1.0.0.sv
+$FIFO_ROOT/sv_verification/FIFO_IF.sv
+$FIFO_ROOT/sv_verification/FIFO_transaction_pkg.sv
+$FIFO_ROOT/sv_verification/FIFO_coverage_pkg.sv
+$FIFO_ROOT/sv_verification/FIFO_scoreboard_pkg.sv
+$FIFO_ROOT/sv_verification/FIFO_monitor.sv
+$FIFO_ROOT/sv_verification/FIFO_tb.sv
+$FIFO_ROOT/sv_verification/FIFO_top.sv
