@@ -28,7 +28,7 @@ Verification was performed in a Linux environment using QuestaSim. Each environm
 
 n\`\`\`
 
-Ensure that `$FIFO_ROOT` is set before invoking any of the make targets.
+Ensure that `$FIFO_ROOT` is set in environment pathes before invoking any of the make targets.
 
 ## 3. Directory Structure
 
@@ -39,8 +39,15 @@ ${FIFO_ROOT}/
 │   ├── FIFO_1.0.0v.sv
 ├── sv_verification/       # SV-based directed testbench and scripts
 │   ├── tb_fifo.sv
-│   ├── src_list.f         # Generated file list for SV tests
-│   └── ...
+│   ├── src_files.list     # Generated file list for SV tests
+│   └── src_files_2.list
+│   └── FIFO_IF.sv
+│   └── FIFO_transaction_pkg.sv
+│   └── FIFO_coverage_pkg.sv
+│   └── FIFO_scoreboard_pkg.sv
+│   └── FIFO_monitor.sv
+│   └── FIFO_tb.sv
+│   └── FIFO_top.sv
 ├── uvm_verification/      # UVM testbench and supporting classes
 │   ├── env/               # UVM environment folder
 │   ├── test/              # UVM test sequences and cases
@@ -129,8 +136,8 @@ git checkout tags/FIFO_1.0.0
 
 ## 8. Contributing & Extensions
 
-* To add new test cases (SV or UVM), place your `.sv` files in the respective directories and update `filelist.f`.
-* To increase the number of seeds, edit the `SEED_LIST` variable in `tools/*/Makefile`.
+* To add new test cases (SV or UVM), place your `.sv` files in the respective directories and update `src_files.list`.
+* To increase the number of seeds, edit the `SEED` variable in `tools/*/Makefile`.
 
 ## 9. License & Authors
 
