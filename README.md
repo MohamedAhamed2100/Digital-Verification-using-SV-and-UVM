@@ -104,10 +104,15 @@ make all
 
 **Makefile targets:**
 
-* `all` : Run tests for seeds 1..5
-* `seed SEED=<n>` : Run only for the specified seed
+* "  questa        - Run basic simulation"
+* "  questa+SIM    - Run simulation with +SIM defined"
+* "  seed<number>  - Run simulation with specific seed (e.g., seed1, seed2)"
+* "  all_seeds     - Run simulations with all predefined seeds"
+* "  merge_coverage- Merge coverage data from all seed runs"
+* "  run_seeds     - Run all seeds and merge coverage"
+* "  clean         - Clean up simulation files"
 
-Logs and waveform dumps will be output into `sv_verification/results/`.
+Results, coverage reports, Logs and waveform dumps will be output into `sv_verification`.
 
 ## 6. Running UVM-Based Verification
 
@@ -129,7 +134,7 @@ make all
 * "  run_seeds     - Run all seeds and merge coverage"
 * "  clean         - Clean up simulation files"	
 
-Results, coverage reports, and logs will be generated under `uvm_verification/results/`.
+Results, coverage reports, and logs will be generated under `uvm_verification`.
 
 ## 7. Design Versions
 
