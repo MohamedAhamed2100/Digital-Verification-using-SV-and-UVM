@@ -83,8 +83,8 @@ Before running either environment, generate or update the file lists to include 
 1. **SV Verification file list:**
 
    ```bash
-   find ${FIFO_ROOT}/design -name "*.sv" > ${FIFO_ROOT}/sv_verification/src_files.list
-   find ${FIFO_ROOT}/design -name "*.sv" > ${FIFO_ROOT}/sv_verification/src_files_2.list
+   find ${FIFO_ROOT}/sv_verification -name "*.sv" > ${FIFO_ROOT}/sv_verification/src_files.list
+   find ${FIFO_ROOT}/sv_verification -name "*.sv" > ${FIFO_ROOT}/sv_verification/src_files_2.list
    ```
 
 2. **UVM Verification file list:**
