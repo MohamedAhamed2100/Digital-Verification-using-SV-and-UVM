@@ -3,7 +3,7 @@
 # Date        : 2025-05-02
 # Repository  : https://github.com/MohamedAhamed2100/Digital-Verification-using-SV-and-UVM
 # Description : Top-level Makefile to automate compilation and simulation of the
-# SystemVerilog FIFO verification environment.
+# UVN FIFO verification environment.
 
 VSIM = vsim
 VLOG = qverilog
