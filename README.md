@@ -144,9 +144,7 @@ git checkout tags/FIFO_1.0.0
 * To add new test cases (SV or UVM), place your `.sv` files in the respective directories and update `src_files.list`.
 * To increase the number of seeds, edit the `SEEDS` variable in `tools/*/Makefile`.
 
-## 9. License & Authors
-
-This project is licensed under the MIT License.
+## 9. Authors
 
 **Authors:**
 
