@@ -23,7 +23,7 @@ Verification was performed in a Linux environment using QuestaSim. Each environm
 
    ```bash
    # Point to the root of this FIFO project
-   export FIFO_ROOT=$HOME/path/to/fifo-verification
+   export FIFO_ROOT=$HOME/path/to/syn_fifo
    ```
 
 Ensure that `$FIFO_ROOT` is set in environment pathes before invoking any of the make targets.
