@@ -1,6 +1,9 @@
 # Digital-Verification-using-SV-and-UVM
 **Asynchronous FIFO Verification Project**
 
+![Linux Logo](./assets/linux-logo.png)  
+*Verified on Linux / QuestaSim*
+
 ## 1. Project Overview
 
 This repository contains the verification environment and scripts for an **asynchronous FIFO** module, implemented in SystemVerilog and verified using both SV-based directed tests and a UVM-based environment. Two versions of the FIFO design are provided:
