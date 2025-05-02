@@ -1,7 +1,8 @@
 # Digital-Verification-using-SV-and-UVM
 **Asynchronous FIFO Verification Project**
 
-![Linux Logo](https://github.com/user-attachments/assets/bbef3b7c-0c9f-4d12-b637-4cce7dc29a97)
+![Linux Logo](https://github.com/user-attachments/assets/5943868a-9cda-4ea9-bffc-44489401f924)
+
 *Verified on Linux / QuestaSim*
 
 ## 1. Project Overview
