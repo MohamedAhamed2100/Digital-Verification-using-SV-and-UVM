@@ -14,11 +14,11 @@ Verification was performed in a Linux environment using QuestaSim. Each environm
 
 1. **Toolchain:**
 
-   * QuestaSim (Modelsim / Questa) simulator
+   * QuestaSim simulator
    * GNU Make
 2. **Operating System:**
 
-   * Linux (Ubuntu 18.04+ recommended)
+   * Linux (Ubuntu 22.04+ recommended)
 3. **Environment Variables:**
 
    ```bash
@@ -34,15 +34,14 @@ Ensure that `$FIFO_ROOT` is set before invoking any of the make targets.
 
 ```
 ${FIFO_ROOT}/
-├── design/                   # RTL design files
-│   ├── fifo_pkg.sv
-│   ├── async_fifo.sv
-│   └── ...
-├── sv_verification/         # SV-based directed testbench and scripts
+├── design/                 # RTL design files
+│   ├── FIFO_0.1v.sv
+│   ├── FIFO_1.0.0v.sv
+├── sv_verification/       # SV-based directed testbench and scripts
 │   ├── tb_fifo.sv
-│   ├── filelist.f       # Generated file list for SV tests
+│   ├── src_list.f         # Generated file list for SV tests
 │   └── ...
-├── uvm_verification/        # UVM testbench and supporting classes
+├── uvm_verification/      # UVM testbench and supporting classes
 │   ├── env/               # UVM environment folder
 │   ├── test/              # UVM test sequences and cases
 │   ├── filelist.f         # Generated file list for UVM tests
@@ -50,11 +49,9 @@ ${FIFO_ROOT}/
 ├── tools/
 │   ├── sv/                # Tools for SV-based verification
 │   │   ├── Makefile       # Targets to run SV tests with seeds
-│   │   └── run_sv.sh      # Example run script
 │   └── uvm/               # Tools for UVM-based verification
 │       ├── Makefile       # Targets to run UVM tests with seeds
-│       └── run_uvm.sh     # Example run script
-└── README.md               # (this file)
+└── 
 ```
 
 ## 4. File Lists
