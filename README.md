@@ -147,6 +147,6 @@ Checkout a specific version before running tests
 
 **Authors:**
 
-* Your Name (`Mohamed Ahmed`)
+* Name (`Mohamed Ahmed`)
 
 Happy verifying! 🔍
