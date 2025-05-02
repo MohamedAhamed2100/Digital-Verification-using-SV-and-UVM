@@ -40,24 +40,36 @@ ${FIFO_ROOT}/
 ├── sv_verification/       # SV-based directed testbench and scripts
 │   ├── tb_fifo.sv
 │   ├── src_files.list     # Generated file list for SV tests
-│   └── src_files_2.list
-│   └── FIFO_IF.sv
-│   └── FIFO_transaction_pkg.sv
-│   └── FIFO_coverage_pkg.sv
-│   └── FIFO_scoreboard_pkg.sv
-│   └── FIFO_monitor.sv
-│   └── FIFO_tb.sv
+│   ├── src_files_2.list
+│   ├── FIFO_IF.sv
+│   ├── FIFO_transaction_pkg.sv
+│   ├── FIFO_coverage_pkg.sv
+│   ├── FIFO_scoreboard_pkg.sv
+│   ├── FIFO_monitor.sv
+│   ├── FIFO_tb.sv
 │   └── FIFO_top.sv
-├── uvm_verification/      # UVM testbench and supporting classes
-│   ├── env/               # UVM environment folder
-│   ├── test/              # UVM test sequences and cases
-│   ├── filelist.f         # Generated file list for UVM tests
-│   └── ...
+├── uvm_verification/       # UVM testbench and supporting classes
+│   ├── Shared_pkg.sv      
+│   ├── FIFO_v1.0.0.sv     
+│   ├── FIFO_IF.sv        
+│   ├── top_module.sv         
+│   ├── FIFO_config_obj_pkg.sv         
+│   ├── FIFO_test_pkg.sv        
+│   ├── FIFO_sequence_pkg.sv         
+│   ├── FIFO_env_pkg.sv         
+│   ├── FIFO_coverage_pkg.sv        
+│   ├── FIFO_sequence_item_pkg.sv         
+│   ├── FIFO_sequencer_pkg.sv
+│   ├── FIFO_agent_pkg.sv
+│   ├── FIFO_driver_pkg.sv
+│   ├── FIFO_monitor_pkg.sv
+│   ├── FIFO_scoreboard_pkg.sv       
+│   └── src_files.list      # Generated file list for UVM tests
 ├── tools/
-│   ├── sv/                # Tools for SV-based verification
-│   │   ├── Makefile       # Targets to run SV tests with seeds
-│   └── uvm/               # Tools for UVM-based verification
-│       ├── Makefile       # Targets to run UVM tests with seeds
+│   ├── sv/                 # Tools for SV-based verification
+│   │   ├── Makefile        # Targets to run SV tests with seeds
+│   └── uvm/                # Tools for UVM-based verification
+│       ├── Makefile        # Targets to run UVM tests with seeds
 └── 
 ```
 
