@@ -115,7 +115,7 @@ Results, coverage reports, Logs and waveform dumps will be output into `sv_verif
 
 The UVM environment provides a reusable testbench with sequences in `uvm_verification/`. To execute the UVM tests:
 
-![image](https://github.com/user-attachments/assets/2411363b-336d-43b5-a474-5eb0197bf912)
+![image](https://github.com/user-attachments/assets/d35e6a2a-ce1f-4e72-937c-43a9849379ad)
 
 **Makefile targets:**
 
